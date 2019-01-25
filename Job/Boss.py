@@ -11,9 +11,9 @@ boss网站规律,一个岗位有10页, https://www.zhipin.com/c101010100-p100101
     30 生成总监
 '''
 
-headers = RequestConfig.headers
+headers = RequestConfig.bossHeaders
 
-BossURL = 'https://www.zhipin.com/job_detail/?ka=header-job'
+BossURL = 'https://www.zhipin.com/job_detail/?query=&scity=100010000&industry=&position='
 #伪装浏览器发送header
 
 page = 1
@@ -39,12 +39,9 @@ for n in  range(1,11):
         input.append(requirements[4].string if len(requirements) > 4 else 'None') #学历
 
         company = item.find('div','info-company').find('p').contents
-        input.append(company[0].string if len(company) > 0 else 'None') #公司行业
-        input.append(company[2].string if len(company) > 2 else 'None') #融资阶段
         input.append(company[4].string if len(company) > 4 else 'None') #公司人数
 
         input.append(item.find('div', 'info-publis').find('p').string.replace('发布于', ''))  # 发布日期
-        input.append(item.find('div', 'info-publis').find('h3').contents[3].string)  # 发布人
 
         print('\t'.join(input))
         RequestConfig.time.sleep(1)

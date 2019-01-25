@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 import time
-headers ={
+bossHeaders ={
     'authority': 'www.zhipin.com',
     'method': 'GET',
     'scheme': 'https',
