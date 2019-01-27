@@ -12,5 +12,12 @@ class JobwebItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
 
-    
+    jobTitle = scrapy.Field() #岗位
+    Salary = scrapy.Field() #工资
+    jobSite = scrapy.Field() #上班地点
+    jobExperience = scrapy.Field() #工作经历
+    jobFinancing = scrapy.Field() #学历
+    jobEmployees = scrapy.Field() #公司人数
+    jobRelease = scrapy.Field() #发布日期
+    jobCompany = scrapy.Field() #公司名称
     pass
