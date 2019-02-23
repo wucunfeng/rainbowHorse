@@ -20,4 +20,12 @@ class JobwebItem(scrapy.Item):
     jobEmployees = scrapy.Field() #公司人数
     jobRelease = scrapy.Field() #发布日期
     jobCompany = scrapy.Field() #公司名称
-    pass
+
+
+class LaGouItem(scrapy.Item):
+    LaGouTitle = scrapy.Field()  # 岗位
+    LaGouSalary = scrapy.Field()  # 工资
+    LaGouSite = scrapy.Field()  # 上班地点
+    LaGouCompany = scrapy.Field()  # 公司名称
+
+

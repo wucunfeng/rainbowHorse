@@ -14,18 +14,4 @@ public class IndexController {
     {
         return "index";
     }
-
-    @GetMapping("/index/registered")
-    public void registered()
-    {
-
-    }
-
-    /**
-     * 登录
-     */
-    @GetMapping("/index/login")
-    public void login()
-    {
-    }
 }

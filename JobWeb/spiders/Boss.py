@@ -5,7 +5,6 @@ from JobWeb.items import JobwebItem
 from JobWeb.Requesthead import Bossheaders
 class BossSpider(Spider):
     name = 'Boss'
-    BossHeader = Bossheaders
     def start_requests(self):
         url = 'https://www.zhipin.com/c100010000/?page=1&ka=page-1'
         yield Request(url =url,headers= Bossheaders)
