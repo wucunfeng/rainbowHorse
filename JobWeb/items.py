@@ -28,4 +28,6 @@ class LaGouItem(scrapy.Item):
     LaGouSite = scrapy.Field()  # 上班地点
     LaGouCompany = scrapy.Field()  # 公司名称
 
-
+class NeiTui(scrapy.Item):
+    NeiTuiTitle = scrapy.Field()
+    NeiTuiCompany = scrapy.Field()
